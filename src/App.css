@@ -1,0 +1,102 @@
+.title {
+  position:relative;
+  text-align: center;
+  top: 170px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Kosugi', sans-serif;
+}
+nav {
+  position: sticky; top:0;
+  float:right;
+  display:inline block;
+}
+
+ul {
+  font-size: 24px;
+  margin-right: 20px;
+  list-style-type: none;
+  display:flex;
+}
+p {
+  text-align: center;
+}
+
+.introContainer {
+  background: rgba(255, 255, 255, 0.1);
+  position:relative; top:80px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.intro {
+  color:white;
+  text-align: center;
+  font-size: 18px;
+  position: relative;top:10px;
+}
+.site {
+  text-align: center;
+  max-width: 300px;
+  margin:0 auto;
+}
+.logo {
+  transform: scale(0.2);
+  position:relative; right:119px; top:100px;
+}
+
+.logo2 {
+  transform: scale(.5);
+  position:relative; top:70px; right:50px;
+  padding-bottom: 40px;
+  opacity: 0.8;
+ }
+
+.outro {
+  color:white;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Kosugi', sans-serif;
+  position: relative; bottom: 0px;
+  padding-bottom: 40px;
+}
+.socialContainer {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  padding: 25px 25px;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.github {
+  color:white;
+}
+
+a.linkedin {
+  color:white;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+li.hlink:hover {
+  transform: translateY(-2px);
+}
+
+li.hlink:active {
+  color:black !important;
+}
+div {
+  font-family: 'Kosugi', sans-serif;
+}
+
+.aboutMe {
+  text-align: center;
+  top:50px;
+  margin: 0 auto;
+}
