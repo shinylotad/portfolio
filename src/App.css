@@ -6,6 +6,7 @@
   font-size: 18px;
   font-family: 'Kosugi', sans-serif;
 }
+
 nav {
   position: sticky; top:0;
   float:right;
@@ -13,7 +14,7 @@ nav {
 }
 
 ul {
-  font-size: 24px;
+  font-size: 20px;
   margin-right: 20px;
   list-style-type: none;
   display:flex;
@@ -24,16 +25,16 @@ p {
 
 .introContainer {
   background: rgba(255, 255, 255, 0.1);
-  position:relative; top:80px;
+  position:relative; top:60px;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .intro {
   color:white;
   text-align: center;
   font-size: 18px;
-  position: relative;top:10px;
+  position: relative;
 }
 .site {
   text-align: center;
@@ -47,8 +48,7 @@ p {
 
 .logo2 {
   transform: scale(.5);
-  position:relative; top:70px; right:50px;
-  padding-bottom: 40px;
+  position:relative; bottom:63px; right:58px;
   opacity: 0.8;
  }
 
@@ -57,7 +57,7 @@ p {
   text-align: center;
   font-size: 18px;
   font-family: 'Kosugi', sans-serif;
-  position: relative; bottom: 0px;
+  position: relative; top:100px;
   padding-bottom: 40px;
 }
 .socialContainer {
@@ -94,9 +94,53 @@ li.hlink:active {
 div {
   font-family: 'Kosugi', sans-serif;
 }
+.contactForm {
+  display: block;
+  margin: 0 auto;
+}
 
+input {
+  border-radius: 5px;
+  width: 250px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color:white;
+}
+
+input:focus {
+  border:1px solid rgba(255, 255, 255, 0.8);
+  outline: none;
+}
+::placeholder {
+  font-size: 15px;
+  color:rgba(255, 255, 255, 0.8);
+
+}
+
+textarea {
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color:white;
+}
+
+textarea:focus {
+  border:1px solid rgba(255, 255, 255, 0.8);
+  outline: none;
+}
+
+.send {
+  font-weight:bold;
+  outline:none;
+  border-style: none;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0);
+  color: white;
+}
 .aboutMe {
   text-align: center;
   top:50px;
-  margin: 0 auto;
+  color: white;
+
 }
