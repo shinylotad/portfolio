@@ -7,13 +7,13 @@ function About() {
   return (
     <div>
     <Navbar className="nav"/>
-    <motion.div initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}>
+    <motion.div initial={{ y:"100%", opacity: 0, }}
+                animate={{ y:"0%", opacity: 1, transition: { duration: 1.3} }}
+                exit={{ x:"100%",opacity: 0, transition: { duration: 1.3}}}>
       <div className="site">
-        <div className="introContainer">
-          <p2 className="aboutMe">--<br/>
-            Hey, my name is Vincent Moreno. I am a 20 something year old who isn't working in his dream role (yet. 👋😁 ). <br/><br/>
+      <div className="aboutContainer">
+          <p2 className="aboutMe"><br/><br/>
+            Hey, my name is Vincent. I am a 20 something year old who isn't working in his dream role (yet. 👋😁 ). <br/><br/>
             "Time and tide wait for no man." is a phrase that really resonates with me
             and something I apply to every facet of my life. I have a very steadfast personality. I actually enjoy
             being humbled.
@@ -24,15 +24,10 @@ function About() {
             problem-solving aspect of everything. Struggling and figuring out the solution is a wonderful feeling.
             <br/><br/>
             Please check out the links on the right if you're interested in connecting with me, and seeing my code.
-            <br/>
-            --
-
+            <br/><br/>
+            <br/><br/>
           </p2>
-        </div>
-      <p3 className="outro">
-      2021年以来輝いている
-      SHINING SINCE 2021
-      </p3>
+      </div>
     </div>
     </motion.div>
     <Footer/>

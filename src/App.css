@@ -1,16 +1,14 @@
-.title {
-  position:relative;
-  text-align: center;
-  top: 170px;
-  color: white;
-  font-size: 18px;
-  font-family: 'Kosugi', sans-serif;
+.navWrap {
+  position:fixed; top:0;
+  width:100%;
+  z-index: 9999;
 }
 
 nav {
-  position: sticky; top:0;
+  position: relative;
   float:right;
   display:inline block;
+  z-index: 9999;
 }
 
 ul {
@@ -24,10 +22,12 @@ p {
 }
 
 .introContainer {
-  background: rgba(255, 255, 255, 0.1);
-  position:relative; top:60px;
+  display:flex;
+  position:relative;
   padding: 20px;
+  max-width: 600px;
   border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .intro {
@@ -38,32 +38,46 @@ p {
 }
 .site {
   text-align: center;
-  max-width: 300px;
-  margin:0 auto;
+  max-width: 600px;
+  position:relative; top:100px;
+  margin: auto;
+  width:100%;
+  background: linear-gradient(to bottom left, rgba(255,255,255,1) 0%, rgba(199,245,186,1) 34%, rgba(0,212,255,1) 100%);
+  border-radius: 10px;
+}
+
+.projectContainer {
+  text-align: center;
+  list-style: none;
+  max-width: 600px;
+  position:relative; top:100px;
+  margin: auto;
+  padding-bottom: 140px;
+  margin-bottom: 20px;
+  width:100%;
+  background: linear-gradient(351deg, rgba(250,0,255,1) 0%, rgba(0,29,255,1) 100%);
+  border-radius: 10px;
+}
+.clockPic {
+
+}
+.proj1 {
+  width:100%;
 }
 .logo {
-  transform: scale(0.2);
-  position:relative; right:119px; top:100px;
+  position:relative;
+  float:inherit;
+  -webkit-filter: drop-shadow(1px 1px 5px #222);
+  filter: drop-shadow(1px 1px 1px #222);
+  width:25%;
+  height:100%;
 }
 
-.logo2 {
-  transform: scale(.5);
-  position:relative; bottom:63px; right:58px;
-  opacity: 0.8;
- }
-
-.outro {
-  color:white;
-  text-align: center;
-  font-size: 18px;
-  font-family: 'Kosugi', sans-serif;
-  position: relative; top:100px;
-  padding-bottom: 40px;
-}
 .socialContainer {
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-  padding: 25px 25px;
+  border-radius: 0px;
+  padding: 15px 15px;
+  margin-right: 40px;
 }
 
 a.social {
@@ -79,6 +93,9 @@ a.github {
 a.linkedin {
   color:white;
 }
+a.source {
+  color: white;
+}
 
 a.social:hover {
   transform: translateY(-2px);
@@ -91,20 +108,29 @@ li.hlink:hover {
 li.hlink:active {
   color:black !important;
 }
+
 div {
-  font-family: 'Kosugi', sans-serif;
+  font-family: 'Zen Maru Gothic', sans-serif;
 }
+
 .contactForm {
-  display: block;
   margin: 0 auto;
 }
 
+.contactContainer {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  padding-bottom: 40px;
+  position:relative;top:80px;
+}
 input {
   border-radius: 5px;
   width: 250px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.3);
   border: none;
-  color:white;
+  color:black;
 }
 
 input:focus {
@@ -113,23 +139,27 @@ input:focus {
 }
 ::placeholder {
   font-size: 15px;
-  color:rgba(255, 255, 255, 0.8);
-
+  color:white;
+  text-shadow: 1px 1px #000000;
+  font-family: 'Zen Maru Gothic', sans-serif;
 }
 
 textarea {
   width: 250px;
   border-radius: 5px;
   border: none;
-  background: rgba(255, 255, 255, 0.1);
-  color:white;
+  background: rgba(255, 255, 255, 0.3);
+  color:black;
+  font-family: 'Zen Maru Gothic', sans-serif;
 }
 
 textarea:focus {
   border:1px solid rgba(255, 255, 255, 0.8);
   outline: none;
 }
-
+.textBoxContainer {
+  padding: 4px;
+}
 .send {
   font-weight:bold;
   outline:none;
@@ -137,10 +167,97 @@ textarea:focus {
   font-size: 15px;
   background: rgba(255, 255, 255, 0);
   color: white;
+  padding-top: 10px;
+  text-shadow: 1px 1px #000000;
+}
+.aboutContainer {
+  text-align: center;
+  padding: 10px;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 50px;
+  background: linear-gradient(to bottom right, rgba(78,0,255,1) 34%, rgba(255,194,0,1) 62%, rgba(255,0,0,1) 100%);
+  border-radius: 10px;
+  margin-top: 20px;
 }
 .aboutMe {
   text-align: center;
-  top:50px;
   color: white;
+  font-weight:600;
+}
+
+.clockContainer {
+  color:white;
+  font-size: 22pt;
+  text-align: center;
+  margin-top: 20px;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  padding:1px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: linear-gradient(to top right, rgba(237,255,1,1) 0%, rgba(255,1,14,1) 46%, rgba(3,255,0,1) 100%);
+}
+
+.time {
+  width:100%;
+  color:white;
+  font-size: 22pt;
+  align-items: center;
+  text-align: center;
+}
+.worldClock {
+  position: relative; right:12px;
+  flex-grow: 1;
+}
+@media only screen and (max-width: 700px) {
+  .site {
+    text-align: center;
+    max-width: 300px;
+    position:relative; top:100px;
+    margin: auto;
+    width:100%;
+    background: linear-gradient(to bottom left, rgba(255,255,255,1) 0%, rgba(199,245,186,1) 34%, rgba(0,212,255,1) 100%);
+    border-radius: 10px;
+  }
+  .logo {
+    position: relative; bottom:10px;
+    -webkit-filter: drop-shadow(1px 1px 5px #222);
+    filter: drop-shadow(1px 1px 1px #222);
+  }
+
+  .projectContainer {
+    text-align: center;
+    max-width: 300px;
+    position:relative; top:100px;
+    margin: auto;
+    padding-bottom: 140px;
+    margin-bottom: 20px;
+    width:100%;
+    background: linear-gradient(351deg, rgba(250,0,255,1) 0%, rgba(0,29,255,1) 100%);
+    border-radius: 10px;
+    flex-wrap: wrap;
+  }
+  .clockContainer {
+    color:white;
+    font-size: 17pt;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 300px;
+    padding:1px;
+    border-radius: 10px;
+    background: linear-gradient(to top right, rgba(237,255,1,1) 0%, rgba(255,1,14,1) 46%, rgba(3,255,0,1) 100%);
+  }
+  .worldClock {
+    position: relative;
+    display:inline-block;
+    max-width: 200px;
+  }
+  .localTime {
+    position: relative; left: 50px;
+    width: 100%;
+    max-width: 200px;
+  }
 
 }

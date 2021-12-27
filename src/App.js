@@ -3,9 +3,11 @@ import './App.css';
 import Home from './Home';
 import About from "./About"
 import Contact from "./Contact"
-import Book from "./Book"
-import { Routes, Route, useLocation, useHistory } from "react-router-dom"
+import Projects from "./Projects"
+import Time from "./Time"
+import { Routes, Route, useLocation, useHistory, } from "react-router-dom"
 import { AnimatePresence } from "framer-motion";
+import ScrollToTop from "./Scroll"
 
 
 
@@ -14,13 +16,15 @@ function App() {
 
   return (
     <div>
+    <ScrollToTop/>
     <AnimatePresence exitBeforeEnter>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
-        <Route path="/home" element={<App />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/tutorial" element={<Book />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/time" element={<Time />} />
       </Routes>
     </AnimatePresence>
     </div>

@@ -3,12 +3,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithubAlt,
   faLinkedinIn,
+  faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
 
 function Socials() {
   return (
     <div class="socialContainer">
       <h3>
+
+      <a href="https://github.com/shinylotad/portfolio"
+        className="source social">
+        <FontAwesomeIcon icon={faGitAlt} size="1x" />
+      </a>
 
       <a href="https://www.linkedin.com/in/vincent-moreno/"
         className="linkedin social">
