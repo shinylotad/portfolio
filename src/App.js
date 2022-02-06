@@ -4,7 +4,7 @@ import Home from './Home';
 import About from "./About"
 import Contact from "./Contact"
 import Projects from "./Projects"
-import Time from "./Time"
+import Weather from "./Weather"
 import { Routes, Route, useLocation, useHistory, } from "react-router-dom"
 import { AnimatePresence } from "framer-motion";
 import ScrollToTop from "./Scroll"
@@ -24,7 +24,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/time" element={<Time />} />
+        <Route path="/weather" element={<Weather />} />
       </Routes>
     </AnimatePresence>
     </div>

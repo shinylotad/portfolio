@@ -6,7 +6,7 @@ import { HashLink } from 'react-router-hash-link';
 function Navbar() {
   return(
     <div className="navWrap">
-    <nav>
+     <nav>
       <div>
         <ul>
           <li className="home hlink"><Link to="/home" style={{ color:'white',textDecoration: 'none' }}>.home  .</Link></li>

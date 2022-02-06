@@ -4,7 +4,7 @@ import Socials from "./Socials";
 function Footer() {
   return (
   <div className="footer">
-    <p className="footerContent"><Socials/></p>
+    <div className="footerContent"><Socials/></div>
   </div>
 );
 }

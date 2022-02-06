@@ -8,8 +8,8 @@ import {
 
 function Socials() {
   return (
-    <div class="socialContainer">
-      <h3>
+    <div className="socialContainer">
+      <h1>
 
       <a href="https://github.com/shinylotad/portfolio"
         className="source social">
@@ -26,7 +26,7 @@ function Socials() {
         <FontAwesomeIcon icon={faGithubAlt} size="1x" />
       </a>
 
-      </h3>
+      </h1>
     </div>
   );
 }
