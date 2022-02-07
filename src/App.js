@@ -8,7 +8,7 @@ import Weather from "./Weather"
 import { Routes, Route, useLocation, useHistory, } from "react-router-dom"
 import { AnimatePresence } from "framer-motion";
 import ScrollToTop from "./Scroll"
-
+import Ball from "./Ball"
 
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
 
   return (
     <div>
+    <Ball/>
     <ScrollToTop/>
     <AnimatePresence exitBeforeEnter>
       <Routes location={location} key={location.pathname}>

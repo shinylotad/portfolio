@@ -3,12 +3,11 @@ import Navbar from "./Header";
 import Footer from "./Footer";
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
-
+import { HashLink } from "react-router-hash-link";
 
 function About() {
   return (
     <div>
-      <Navbar className="nav" />
       <motion.div
         initial={{ y: "100%", opacity: 0 }}
         animate={{ y: "0%", opacity: 1, transition: { duration: 1.3 } }}
@@ -17,7 +16,6 @@ function About() {
         <div className="site">
           <div className="aboutContainer">
             <p className="aboutMe">
-              <br />
               Hey, my name is Vincent. I am a 20 something year old who isn't
               working in his dream role (yet. 👋😁 ). <br />
               <br />
@@ -35,12 +33,15 @@ function About() {
               <br />
               Please check out my <Link to="/projects" style={{ color:'white',fontWeight:'bolder' }}>projects.</Link>
               <br />
-
             </p>
+          </div>
+          <div className="aboutContainer">
+          <p className="aboutMe">
+           This site is built mobile-first using React.js. I use framer-motion for animations, and threejs for 3D.
+           </p>
           </div>
         </div>
       </motion.div>
-      <Footer />
     </div>
   );
 }

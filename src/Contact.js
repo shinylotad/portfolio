@@ -37,7 +37,6 @@ function Contact() {
 
   return (
     <div>
-      <Navbar className="nav" />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 1.3 } }}
@@ -81,7 +80,7 @@ function Contact() {
           exit={{ opacity: 0, transition: { duration: 1 } }}
         ></motion.div>
       </motion.div>
-      <Footer />
+      <Footer/>
     </div>
   );
 }

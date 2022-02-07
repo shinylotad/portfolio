@@ -22,7 +22,7 @@ function Projects() {
         <h1 className="title"> #weather </h1>
         <Weather />
 
-        <h1 className="title"> #somethingsomething </h1>
+        <h1 className="title">  </h1>
       </div>
       </motion.div>
       <Footer />

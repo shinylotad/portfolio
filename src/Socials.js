@@ -25,7 +25,6 @@ function Socials() {
         className="github social">
         <FontAwesomeIcon icon={faGithubAlt} size="1x" />
       </a>
-
       </h1>
     </div>
   );

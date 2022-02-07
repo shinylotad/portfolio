@@ -51,7 +51,6 @@ function Weather() {
             className="here">
             <FontAwesomeIcon icon={faGitAlt} size="1x" />
           </a>
-
           </div>
         </div>
         </motion.div>

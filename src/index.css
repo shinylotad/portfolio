@@ -4,8 +4,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-repeat:no-repeat;
-/*  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url('/public/bg.jpeg'); */
+/* background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url('/public/bg.jpeg'); */
   background-image: url('/public/bg.jpeg');
+  background-attachment: fixed;
 }
 
 code {
@@ -16,11 +17,11 @@ code {
 .footer{
   margin-top: 1rem;
   padding: 1rem;
-  position: fixed;
-  bottom: 0;
+  position: relative;
+  top: 40px;
   left: 0;
-  width: 30%;
+  width: 100%;
 }
 .footerContent {
-  float:left;
+
 }
