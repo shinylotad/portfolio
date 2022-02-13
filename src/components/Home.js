@@ -6,6 +6,7 @@ import About from "./About";
 import Clock from "./Clock";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Socials from "./Socials"
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -33,6 +34,11 @@ function Home() {
               about!
             </HashLink>
           </motion.div>
+        <div className="homeFooter">
+        <div>
+          <Socials/>
+            </div>
+          </div>
         </div>
         <div id="about">
         <About />

@@ -21,7 +21,6 @@ function Projects() {
         <h1 className="title">  </h1>
       </div>
       </motion.div>
-      <Footer />
     </div>
   );
 }

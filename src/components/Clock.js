@@ -1,11 +1,40 @@
-import React, { Component } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Navbar from "./Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
 
+/* I unapologetically stole this useInterval function
+from (https://overreacted.io/making-setinterval-declarative-with-react-hooks/)
+because React hooks are very confusing when I need intervals. */
+
+function useInterval(callback, delay) {
+  const savedCallback = useRef();
+
+  // Remember the latest callback.
+  useEffect(() => {
+    savedCallback.current = callback;
+  }, [callback]);
+
+  // Set up the interval.
+  useEffect(() => {
+    function tick() {
+      savedCallback.current();
+    }
+    if (delay !== null) {
+      let id = setInterval(tick, delay);
+      return () => clearInterval(id);
+    }
+  }, [delay]);
+}
+
 function Clock() {
+
+    //Interval to update the time every tick. Clears it afterwards so no memory leaks.
+    useInterval(() => {
+      setTime({ time: Date.now() })
+    },1000);
 
     //Defining the variable for today's date with JS's Date object.
     let today = new Date();
@@ -18,7 +47,8 @@ function Clock() {
       today.getFullYear() +
       " ";
     //Grabbing the current time.
-    let time =
+    let [time, setTime] = useState();
+      time =
       (today.getHours() > 12 ? today.getHours() - 12 : today.getHours()) +
       ":" +
       (today.getMinutes() < 10 ? "0" : "") +

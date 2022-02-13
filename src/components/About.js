@@ -4,6 +4,8 @@ import Footer from "./Footer";
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import { HashLink } from "react-router-hash-link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHtml5, faCss3, faJs, faReact } from "@fortawesome/free-brands-svg-icons";
 
 function About() {
   return (
@@ -17,8 +19,14 @@ function About() {
           <div className="aboutContainer">
             <p className="aboutMe">
               Hey, my name is Vincent. I am a 20 something year old who isn't
-              working in his dream role (yet. 👋😁 ). <br />
+              working in his dream role (yet!). <br />
               <br />
+              I enjoy <br/><br/>
+              <FontAwesomeIcon className="techIcon" icon={ faHtml5 } size="2x"/> <br/>
+              <FontAwesomeIcon className="techIcon" icon={ faCss3 } size="2x"/> <br/>
+              <FontAwesomeIcon className="techIcon" icon={ faJs } size="2x"/> <br/>
+              <FontAwesomeIcon className="techIcon" icon={ faReact } size="2x"/> <br/>
+              <br/><br/>
               "Time and tide wait for no man." is a phrase that really resonates
               with me and something I apply to every facet of my life. I have a
               very steadfast personality. I actually enjoy being humbled. The
