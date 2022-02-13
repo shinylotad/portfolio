@@ -57,7 +57,7 @@ function Weather() {
     <div>
     /* We must call this if statement because there's a delay with variables being defined.
     IF our object is NOT undefined then ... ELSE  show a loading div */
-    
+
       {typeof data.data != "undefined" ? (
         <motion.div
           initial={{ x: "100%", opacity: 0 }}
@@ -70,7 +70,7 @@ function Weather() {
           The temperature is: {data.data.main.temp}&deg;C <br/>
           The weather is: {data.data.weather[0].description} <br/><br/>
 
-          <a href="https://github.com/shinylotad/portfolio/blob/main/src/Weather.js"
+          <a href="https://github.com/shinylotad/portfolio/blob/main/src/components/Weather.js"
             className="here">
             <FontAwesomeIcon icon={faGitAlt} size="1x" />
           </a>
