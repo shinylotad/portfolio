@@ -5,8 +5,9 @@ import React from 'react';
 function BallAnimate() {
   const dodeca = React.useRef()
   useFrame(({ clock }) => {
-    dodeca.current.rotation.x = clock.getElapsedTime()
-    dodeca.current.rotation.y = Math.sin(clock.getElapsedTime())
+    dodeca.current.rotation.x = clock.getElapsedTime() * 0.1
+    dodeca.current.rotation.y = Math.sin(clock.getElapsedTime() * 0.1)
+    dodeca.current.rotation.z = Math.sin(clock.getElapsedTime() * 0.5)
   })
 
 return (

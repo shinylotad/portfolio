@@ -5,8 +5,9 @@ import {
   faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
 
-class Clock extends React.Component {
-  render() {
+function Clock() {
+
+    //Defining the variable for today's date with JS's Date object.
     let today = new Date();
     let date =
       today.getMonth() +
@@ -16,6 +17,7 @@ class Clock extends React.Component {
       "/" +
       today.getFullYear() +
       " ";
+    //Grabbing the current time.
     let time =
       (today.getHours() > 12 ? today.getHours() - 12 : today.getHours()) +
       ":" +
@@ -25,8 +27,9 @@ class Clock extends React.Component {
       (today.getSeconds() < 10 ? "0" : "") +
       today.getSeconds() +
       (today.getHours() > 12 ? " PM" : " AM");
+    //Variable with both date and time for convenience.
     let localDT = date + time;
-
+    //Time around the world because why not. :)
     let jst = new Date().toLocaleString("en-US", { timeZone: "Asia/Tokyo" });
     let nab = new Date().toLocaleString("en-US", {timeZone: "Africa/Windhoek",});
     let lon = new Date().toLocaleString("en-US", { timeZone: "Europe/London" });
@@ -56,18 +59,6 @@ class Clock extends React.Component {
         </div>
       </div>
     );
-  }
-
-  componentDidMount() {
-    this.interval = setInterval(
-      () => this.setState({ time: Date.now() }),
-      1000
-    );
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.interval);
-  }
 }
 
 export default Clock;

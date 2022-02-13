@@ -1,20 +1,23 @@
 import React from 'react';
 import './App.css';
-import Home from './Home';
-import About from "./About"
-import Contact from "./Contact"
-import Projects from "./Projects"
-import Weather from "./Weather"
+import Home from './components/Home';
+import About from "./components/About"
+import Contact from "./components/Contact"
+import Projects from "./components/Projects"
+import Weather from "./components/Weather"
 import { Routes, Route, useLocation, useHistory, } from "react-router-dom"
 import { AnimatePresence } from "framer-motion";
-import ScrollToTop from "./Scroll"
-import Ball from "./Ball"
+import ScrollToTop from "./components/Scroll"
+import Ball from "./components/Ball"
 
 
 function App() {
   const location = useLocation();
 
   return (
+    /* My threejs ball component is called here because I want it to essentially be the background of the entire app.
+    ScrollToTop is here simply to animate smoothly back to the top of the page when new links in my router are clicked.
+    AnimatePresence is a wrapper for my framer-motion animations. */
     <div>
     <Ball/>
     <ScrollToTop/>

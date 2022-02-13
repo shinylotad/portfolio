@@ -16,12 +16,8 @@ function Projects() {
         exit={{ opacity: 0, transition: { duration: 1.3 } }}
       >
       <div className="projectWrapper">
-        <h1 className="title"> #worldclock </h1>
         <Time />
-
-        <h1 className="title"> #weather </h1>
         <Weather />
-
         <h1 className="title">  </h1>
       </div>
       </motion.div>

@@ -8,7 +8,6 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import Ball from "./Ball";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons";
 
@@ -23,7 +22,7 @@ function Home() {
       >
         <div className="centerDiv">
           <h2 className="logo">
-            <img src={require("./logo.png")} alt="shining lotad" />
+            <img src={require("../assets/logo.png")} alt="shining lotad" />
           </h2>
         </div>
         <div className="homeTitle">
@@ -45,7 +44,7 @@ function Home() {
         </HashLink>
         </div>
         <Contact />
-        </div>                  
+        </div>
       </motion.div>
     </div>
   );
