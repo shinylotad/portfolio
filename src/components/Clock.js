@@ -51,7 +51,7 @@ function Clock() {
             <p className="projectLiner">
               {" "}
               Local: {localDT}{" "} <br/> <br/>
-              <a href="https://github.com/shinylotad/portfolio/blob/main/src/Clock.js"
+              <a href="https://github.com/shinylotad/portfolio/blob/main/src/components/Clock.js"
                 className="here">
                 <FontAwesomeIcon icon={faGitAlt} size="1x" />
               </a>
