@@ -31,6 +31,9 @@ function App() {
         <Route path="/weather" element={<Weather />} />
       </Routes>
     </AnimatePresence>
+    <div className="copywrite">
+    Made with love by VINCENT MORENO &copy; All rights reserved.
+    </div>
     </div>
   );
 }

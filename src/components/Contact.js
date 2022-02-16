@@ -73,14 +73,7 @@ function Contact() {
             </button>
           </motion.div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 7 } }}
-          exit={{ opacity: 0, transition: { duration: 1 } }}
-        ></motion.div>
       </motion.div>
-      <Footer/>
     </div>
   );
 }

@@ -13,7 +13,7 @@ body {
 
 html {
   max-width: 100%;
-  overflow-x: hidden;  
+  overflow-x: hidden;
 }
 
 code {
@@ -29,6 +29,19 @@ code {
   left: 0;
   width: 100%;
 }
-.footerContent {
+@media only screen and (max-width: 700px) {
+  .footer{
+    top: 40px;
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
 
+  .socialContainer {
+    position: relative;
+    right: 0px;
+    color: white;
+  }
 }
