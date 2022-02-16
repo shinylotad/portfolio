@@ -28,10 +28,9 @@ function Home() {
         </div>
         <div className="homeTitle">
           {" "}
-          Hi, I'm Vincent. <br />This is what I'm all
-          <motion.div whileHover={{ scale: 1.4, transition: { duration: 1 } }}>
+          <motion.div whileHover={{ scale: 1.2, transition: { duration: 1 } }}>
             <HashLink smooth to="#about" style={{ color: "white", fontWeight: "bolder" }}>
-              about!
+              <FontAwesomeIcon icon={faArrowCircleDown} size="2x" />
             </HashLink>
           </motion.div>
         <div className="homeFooter">
@@ -44,11 +43,6 @@ function Home() {
         <About />
         </div>
         <div id="contact">
-        <div className="downArrow">
-        <HashLink smooth to="#contact" style={{ color: "white" }}>
-          <FontAwesomeIcon icon={faArrowCircleDown} size="2x" />
-        </HashLink>
-        </div>
         <Contact />
         </div>
       </motion.div>

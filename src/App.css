@@ -19,8 +19,9 @@ div {
   width: 100%;
 }
 .logo {
-  position: relative;  bottom:34.5px;
+  position: relative; top: 0px;
   transform: scale(0.5);
+  margin-top: 10px;
   height:50%;
 }
 .downArrow {
@@ -31,6 +32,23 @@ div {
 .techIcon {
   margin: 6px;
 }
+.blogImg {
+  max-width: 100%;
+  height: auto;
+}
+.techWrap {
+
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+.techList {
+  font-weight: bold;
+  background: purple;
+  border-radius: 10px;
+  padding: 5px;
+}
+
 
 
 /* WRAPPERS */
@@ -48,9 +66,8 @@ div {
   font-weight: normal;
   font-size: 25px;
   position: relative;
-  top: -350px;
+  bottom: 200px;
   text-align: center;
-  position: relative;
   z-index: 5100;
 }
 .introContainer {
