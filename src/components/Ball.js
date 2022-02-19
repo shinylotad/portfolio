@@ -17,7 +17,7 @@ return (
     <meshLambertMaterial
       wireframe={true}
       transparent={true}
-      opacity={0.5}
+      opacity={0.2}
       />
   </mesh>
   );
