@@ -15,7 +15,10 @@ import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons";
 function Home() {
   return (
     <div>
-      <Navbar className="nav" />
+			<Navbar className="nav" />
+				<div className="homeFooter">
+					<Footer/>
+				</div>
       <motion.div
         initial={{ x: "-100%", opacity: 0 }}
         animate={{ x: "0%", opacity: 1, transition: { duration: 1.3 } }}
@@ -24,26 +27,10 @@ function Home() {
         <div className="centerDiv">
           <h2 className="logo">
             <img src={require("../assets/logo.png")} alt="shining lotad" />
-          </h2>
-        </div>
-        <div className="homeTitle">
-          {" "}
-          <motion.div whileHover={{ scale: 1.2, transition: { duration: 1 } }}>
-            <HashLink smooth to="#about" style={{ color: "white", fontWeight: "bolder" }}>
-              <FontAwesomeIcon icon={faArrowCircleDown} size="2x" />
-            </HashLink>
-          </motion.div>
-        <div className="homeFooter">
-        <div>
-          <Socials/>
-            </div>
-          </div>
+					</h2>
         </div>
         <div id="about">
-        <About />
-        </div>
-        <div id="contact">
-        <Contact />
+       	 <About />
         </div>
       </motion.div>
     </div>

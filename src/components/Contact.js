@@ -72,8 +72,9 @@ function Contact() {
               SEND 💌{" "}
             </button>
           </motion.div>
-        </div>
-      </motion.div>
+				</div>
+			</motion.div>
+		<Footer/>
     </div>
   );
 }

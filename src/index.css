@@ -24,24 +24,33 @@ code {
 .footer{
   margin-top: 1rem;
   padding: 1rem;
-  position: relative;
-  top: 40px;
+  position: fixed;
+  float: right;
+  bottom: 0;
   left: 0;
   width: 100%;
 }
+
+.socialContainer {
+    float: right;
+    left:100px;
+    color: white;
+    justify-content: center;
+}
 @media only screen and (max-width: 700px) {
   .footer{
-    top: 40px;
-    display: flex;
-    width: 100vw;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 5px;
+  margin-top: 1rem;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  align-items:center;
   }
 
   .socialContainer {
-    position: relative;
-    right: 0px;
+    float: right;
+    left:100px;
     color: white;
+    justify-content: center;
   }
 }
