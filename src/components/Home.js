@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons";
+import Logo from "../assets/Logo.js";
 
 function Home() {
   return (
@@ -20,14 +21,12 @@ function Home() {
 					<Footer/>
 				</div>
       <motion.div
-        initial={{ x: "-100%", opacity: 0 }}
-        animate={{ x: "0%", opacity: 1, transition: { duration: 1.3 } }}
+        initial={{ x: "0%", y: "-50%", opacity: 0 }}
+        animate={{ x: "0%", y: "0", opacity: 1, transition: { duration: 4 } }}
         exit={{ y: "100%", opacity: 0, transition: { duration: 1.3 } }}
       >
         <div className="centerDiv">
-          <h2 className="logo">
-            <img src={require("../assets/logo.png")} alt="shining lotad" />
-					</h2>
+					<Logo />
         </div>
         <div id="about">
        	 <About />
